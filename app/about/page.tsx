@@ -2,7 +2,7 @@ import {FixedNav} from "@/components/common/navBar";
 import {StaticNav} from "@/components/common/navBar";
 import HeroContainer from "@/components/home/heroContainer";
 import MarqueContainer from "@/components/home/marqueContainer";
-import { AvatarContainer } from "@/components/home/avatarContainer";
+import AvatarContainer from "@/components/home/avatarContainer";
 import { RenderBox } from "@/components/home/renderBox";
 import { dmSans } from "@/utils/font";
 import {responsiveBoxClass} from "@/utils/styles";
