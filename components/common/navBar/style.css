@@ -1,7 +1,7 @@
 /* Animation to slide in from the left */
 .slidein {
-    -webkit-animation: slide-in-from-left 2.5s ease-in ease-out 4s 1 normal forwards;
-            animation: slide-in-from-left 2.5s ease-in ease-out 4s 1 normal forwards;
+    -webkit-animation: slide-in-from-left 2s ease-in ease-out 4s 1 normal forwards;
+            animation: slide-in-from-left 2s ease-in ease-out 4s 1 normal forwards;
   }
 
   /* Animation to slide out from the right */
@@ -10,11 +10,6 @@
             animation: slide-out-from-right 2s ease-in 4s 1 normal forwards;
   }
   
-  /* New fade-out animation */
-  .fadeout {
-    -webkit-animation: fade-out 2s ease-in 4s 1 normal forwards;
-            animation: fade-out 2s ease-in 4s 1 normal forwards;
-  }
   
   /* Keyframes for sliding in from the left */
   @-webkit-keyframes slide-in-from-left {
@@ -54,33 +49,106 @@
     }
   }
   
-  /* Keyframes for fading out */
-  @-webkit-keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
 
+ /* New fade-in animation */
+.fade-in {
+    -webkit-animation: fade-in 2.1s ease-in 2s 1 normal forwards;
+            animation: fade-in 2.1s ease-in 2s 1 normal forwards;
+}
+
+/* Keyframes for fading in */
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /******not in use code starts***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+
+ /* New make element appear after x seconds */
+ .visible {
+    -webkit-animation: visible 4s ease-in 2s 1 normal forwards;
+            animation: visible 4s ease-in 2s 1 normal forwards;
+}
+
+/* Keyframes for fading in */
+@-webkit-keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+ /* New make element appear after x seconds */
+ .visible {
+    -webkit-animation: space-occupy 4s ease-in 2s 1 normal forwards;
+            animation: space-occupy 4s ease-in 2s 1 normal forwards;
+}
+
+/* Keyframes for display */
+@-webkit-keyframes space-occupy {
+    from {
+        display: none;
+    }
+    to {
+        display: block;
+    }
+}
+
+@keyframes space-occupy {
+    from {
+        display: none;
+    }
+    to {
+        display: block;
+    }
+}
 
 
 
   /* Animation to make width 0 */
 /* Animation to make width 0 */
 .widthGo {
-    -webkit-animation: width-go 2.5s ease-in-out 4s 1 normal forwards;
-            animation: width-go 2.5s ease-in-out 4s 1 normal forwards;
+    -webkit-animation: width-go 2s ease-in-out 4s 1 normal forwards;
+            animation: width-go 2s ease-in-out 4s 1 normal forwards;
 }
 
 /* Keyframes for shrinking width */
@@ -103,14 +171,38 @@
 }
 
   
+
+
+
+
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /****** not in use code ends***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+  /*******                    ***********/
+
+
   /* Styling for the logo */
   .logo-box__logo {
     width: auto;
     height: auto;
     margin-top: 5px;
     transform: rotateZ(0deg);
-    border: 1px solid red;
   }
+
+
+
+
   
   /* Applying both slidein and fadeout animations to the logo */
   .logo-box__logo {
@@ -119,9 +211,42 @@
     animation: width-go 2s ease-in 4s 1 normal forwards, fade-out 2s ease-in 4s 1 normal forwards;
   }
 
-  .logo-box__logo:hover {
-    /* slide-in-from-left 10.5s ease-in ease-out 0s 1 normal forwards */
-    /* fade-out 5s ease-in ease-out 2s 1 normal forwards; */
-    width: 180px;
-  }
-  
+.n-logobox-hidden {
+    display: none;
+    
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Applying the fade-in animation */
+.n-logobox-visible {
+    display: block; /* Ensure the element takes space when visible */
+    opacity: 0;
+    animation: fade-in 2s ease-in 0s forwards;
+}
+
+.n-logo {
+    opacity: 1;
+    transition: opacity 2s ease-out 0.5s;
+}
+.n-logo-hover {
+  opacity: 0;
+}
+
+.non-n-logo {
+    transition: opacity 2s ease-out 0.5s;
+    opacity: 0;
+}
+
+.non-n-logo-hover {
+  opacity: 1;
+  width: auto;
+  height: auto;
+}

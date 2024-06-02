@@ -1,50 +1,9 @@
-// "use client"
-
-// import React, { useState, useEffect } from 'react';
-
-// import LinkBox from './LinkBox';
-// import Logo from './Logo';
-// import RoundedBtn from '../button/RoundedBtn';
-
-// const FixedNav =() => {
-//   const [showNavBar, setShowNavBar] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (window.scrollY > 150) {
-//         setShowNavBar(true);
-//       } else {
-//         setShowNavBar(false);
-//       }
-//     };
-
-//     window.addEventListener('scroll', handleScroll);
-
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
-
-//   return (
-//     showNavBar && (
-//       <div className="w-[50%] h-[60px] pl-2 pr-[0.5px] bg-black shadow-[#034441] shadow-lg rounded-[60px] fixed top-[10px] z-[999] flex justify-between items-center">
-//         <Logo className="ml-2"/>
-//         <LinkBox className="w-[200px]"/>
-//         <RoundedBtn text={"Get Started"} className="" />
-//       </div>
-//     )
-//   );
-// };
-
-// export default FixedNav;
-
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
 import LinkBox from './LinkBox';
-import Logo from './Logo';
 import RoundedBtn from '../button/RoundedBtn';
+import ResponsiveLogo from './ResponsiveLogo';
 
 /**
  * FixedNav Component
@@ -84,7 +43,11 @@ const FixedNav: React.FC = () => {
   return (
     showNavBar && (
       <div className="w-[50%] h-[60px] pl-2 pr-[0.5px] bg-black shadow-[#034441] shadow-lg rounded-[60px] fixed top-[10px] z-[999] flex justify-between items-center">
-        <Logo className="ml-2" />
+        {/* <Logo className="ml-2" /> */}
+        <div className='ml-4'>
+        <ResponsiveLogo nLogoBoxVisible={true} logoClass="w-[100px] h-[80px] top-[10px]" />
+        </div>
+        
         <LinkBox className="w-[200px]" />
         <RoundedBtn text={"Get Started"} className="" />
       </div>
