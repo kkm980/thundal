@@ -48,7 +48,7 @@ const FixedNav: React.FC = () => {
         <ResponsiveLogo nLogoBoxVisible={true} logoClass="w-[100px] top-[10px]" />
         </div>
         
-        <LinkBox className="w-[200px]" />
+        <LinkBox className="ml-16 w-[200px]" />
         <RoundedBtn text={"Get Started"} className="" />
       </div>
     )
