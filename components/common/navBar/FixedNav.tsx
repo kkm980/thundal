@@ -67,7 +67,7 @@ const FixedNav: React.FC = () => {
         // User has scrolled up by more than the threshold
         setShowNavBar(true);
       } else if ((currentScrollY > lastScrollY) || (window.scrollY <= 100)) {
-        // User is scrolling down
+        // User is scrolling down HERE
         setShowNavBar(false);
       }
       
