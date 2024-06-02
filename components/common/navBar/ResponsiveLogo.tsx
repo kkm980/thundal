@@ -31,8 +31,9 @@ const ResponsiveLogo = ({nLogoBoxVisible, logoClass}:{nLogoBoxVisible:boolean, l
     return (
         <Link href="/" className={`absolute nth-logo w-[180px] ${nLogoBoxVisible ? 'n-logobox-visible' : 'n-logobox-hidden'}`}
                             onMouseLeave={handleMouseLeave}
+                            onMouseEnter={handleMouseEnter}
                         >
-                            <Image className="absolute -top-[25px] n-logo" onMouseEnter={handleMouseEnter} src="/images/common/logo/nLogo.png" width={35} height={25} alt="logo" ref={nLogoRef}
+                            <Image className="absolute -top-[25px] n-logo" src="/images/common/logo/nLogo.png" width={35} height={25} alt="logo" ref={nLogoRef}
                             />
                             <div className="absolute -top-[15px] non-n-logo" ref={secLogoRef}>
                                 <Logo className={`${logoClass}`} />

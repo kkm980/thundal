@@ -194,8 +194,6 @@
 
   /* Styling for the logo */
   .logo-box__logo {
-    width: auto;
-    height: auto;
     margin-top: 5px;
     transform: rotateZ(0deg);
   }
@@ -247,6 +245,4 @@
 
 .non-n-logo-hover {
   opacity: 1;
-  width: auto;
-  height: auto;
 }
