@@ -11,11 +11,14 @@ import Tilt from 'react-parallax-tilt';
  * @param {React.ReactNode} children - The child components to be wrapped.
  * @returns {JSX.Element} The TiltContainer component.
  */
-const TiltContainer: React.FC<{ children?: React.ReactNode, className?:string }> = ({ children, className="" }): JSX.Element => {
+const TiltContainer: React.FC<{ children?: React.ReactNode, className?:string, ref?: any }> = ({ children, className="", ref }): JSX.Element => {
   return (
-    <Tilt className={`${className}`}>
+    <div ref={ref}>
+      <Tilt className={`${className}`}>
       {children}
     </Tilt>
+    </div>
+    
   );
 };
 
