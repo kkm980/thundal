@@ -16,7 +16,7 @@ const AvatarContainer: React.FC = (): JSX.Element => {
                 {[...Array(12)].map((_, index) => {
                     // Generates a random number between 0 and 6
                     return (
-                        <div key={index} className='w-[80px] h-[80px] border border-[#048c80] rounded-md'>
+                        <div key={index} className='w-[80px] h-[80px] border border-darkCyan rounded-md'>
                             <BlinkAvatar />
                         </div>
                     );

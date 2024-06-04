@@ -58,8 +58,24 @@ const config: Config = {
         sky: {
           foreground: "#87ceeb",
           DEFAULT: "#87ceeb"
+        },
+        riverSide: {
+          foreground: "#aad9d1",
+          DEFAULT: "#aad9d1"
+        },
+        darkCyan: {
+          foreground: "#048c80",
+          DEFAULT: "#048c80"
         }
       },
+      fontSize: {
+        'mainTitle': "47px",
+        'secTitle': '24px',
+        'punchText': '16px',
+      },
+      fontWeight: {
+        
+      }
     },
   },
   plugins: [],
