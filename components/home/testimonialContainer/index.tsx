@@ -7,7 +7,7 @@ import { xCenter } from "@/utils/styles";
 const TestimonialContainer = ({index}:{index:number}): JSX.Element => {
 
     return (
-        <div className="relative mt-[80px] w-[475px] text-center">
+        <div className="relative mt-[150px] w-[475px] text-center">
             <div className={`text-secTitle text-riverSide leading-[140%]`}>
                 <RenderTranslatedText componentArray={["home","testimonials",`${index}`, "text"]}/>
             </div>
