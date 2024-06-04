@@ -23,10 +23,10 @@ export default function Home() {
   const memoizedTestimonialContainer = useMemo(() => <TestimonialContainer index={0} />, []);
 
   return (
-    <div className={`${dmSans.className} w-full h-[300vh] overflow-x-hidden bg-homeBg relative`}>
+    <div className={`${dmSans.className} w-full h-[800vh] overflow-x-hidden bg-homeBg relative`}>
       <div className={`bg-transparent relative ${xStart} ${col} w-full px-[30px]`}>
         {memoizedFixedNav}
-        <RenderBox className={`relative bg-primary ${responsiveBoxClass} h-[800px] mt-[30px] ${xStart} ${col} h-[100vh]`}>
+        <RenderBox className={`relative bg-primary ${responsiveBoxClass} h-[300vh] mt-[30px] ${xStart} ${col} h-[100vh]`}>
           {memoizedStaticNav}
           <div className={`w-[80%] max-w-[1280px] ${xBetween} mt-4`}>
             {memoizedHeroContainer}
