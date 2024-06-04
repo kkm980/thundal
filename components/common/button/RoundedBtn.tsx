@@ -1,3 +1,4 @@
+import { xCenter } from '@/utils/styles';
 import React from 'react';
 
 interface ButtonProps {
@@ -25,7 +26,7 @@ interface ButtonProps {
 const RoundedBtn: React.FC<ButtonProps> = ({ text, onClick, className = '', style = {}, children }) => {
   return (
     <div
-      className={`w-auto h-[60px] px-[24px] flex justify-center items-center text-[16px] text-black font-regular cursor-pointer rounded-[50px] ${className}`}
+      className={`w-auto h-[60px] px-[24px] ${xCenter} text-punchText text-black cursor-pointer rounded-[50px] ${className}`}
       style={{ background: 'linear-gradient(270deg, #AAD9D1, #017373)', ...style }}
       onClick={onClick}
     >

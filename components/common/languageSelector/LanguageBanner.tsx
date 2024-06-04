@@ -1,3 +1,4 @@
+import { xStart } from "@/utils/styles";
 import Image from "next/image";
 
 type Language = {
@@ -25,7 +26,7 @@ interface LanguageBannerProps {
  */
 const LanguageBanner: React.FC<LanguageBannerProps> = ({ languageObj, changeLang }): JSX.Element => (
     <div
-        className="group/bottom flex justify-start items-center p-2 px-4 rounded-md"
+        className={`group/bottom ${xStart} p-2 px-4 rounded-md`}
         onClick={() => changeLang({ [languageObj[0]]: languageObj[1] })}
     >
         <Image
@@ -35,7 +36,7 @@ const LanguageBanner: React.FC<LanguageBannerProps> = ({ languageObj, changeLang
             height={25}
             className="rounded-full opacity-25 group-hover/bottom:opacity-100"
         />
-        <div className="ml-1 text-sky text-[14px]">
+        <div className="ml-2 text-sky text-punchText">
             {languageObj[1].title}
         </div>
     </div>

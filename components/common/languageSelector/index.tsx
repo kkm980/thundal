@@ -7,6 +7,7 @@ import { setSelectedLanguageStore } from "@/store/slice/applicationSlice/applica
 import { locales } from "./languageSelectorConstant";
 import LanguageBanner from "./LanguageBanner";
 import AutoScroller from "./AutoScroller";
+import { xBetween } from "@/utils/styles";
 
 // Define LanguageSelector component
 
@@ -80,8 +81,8 @@ const LanguageSelector: React.FC = (): JSX.Element => {
             className="group/top relative mr-8 rounded-[25px] z-[99] cursor-pointer"
             onClick={() => setDropDownOpen(prev => !prev)}
         >
-            <div className="flex justify-space-between items-center">
-                <div className="absolute top-[15px] ml-[20px] text-[18px] text-sky hidden group-hover/top:block">
+            <div className={`${xBetween}`}>
+                <div className="absolute top-[15px] ml-[20px] text-punchText text-sky hidden group-hover/top:block">
                     {(Object.values(selectedLanguageStore))[0].title}
                 </div>
                 <AutoScroller scrollSpeed={100} className="hidden group-hover/top:block" />
