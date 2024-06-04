@@ -1,4 +1,4 @@
-import TranslateText from "@/components/common/translateText";
+import {RenderTranslatedText} from "@/components/common/translateText";
 
 const HeroText = () =>{
     return (
@@ -10,21 +10,21 @@ const HeroText = () =>{
           WebkitTextFillColor: "transparent",
         }}
         >
-          <TranslateText componentArray={["home","heroTitle"]} splitIndex={[0,1]}/>
+          <RenderTranslatedText componentArray={["home","heroTitle"]} splitIndex={[0,1]}/>
         </span>
         <span style={{
           color: "#AAD9D1",
           marginLeft: "10px"
         }}
         >
-          <TranslateText componentArray={["home","heroTitle"]} splitIndex={[1,2]}/>
+          <RenderTranslatedText componentArray={["home","heroTitle"]} splitIndex={[1,2]}/>
         </span>
         <span style={{
           color: "white",
           marginLeft: "10px"
         }}
         >
-          <TranslateText componentArray={["home","heroTitle"]} splitIndex={[2,3]}/>
+          <RenderTranslatedText componentArray={["home","heroTitle"]} splitIndex={[2,3]}/>
         </span>
       </div>
       <div className="w-[650px]" style={{ lineHeight: "102%" }}>
@@ -32,7 +32,7 @@ const HeroText = () =>{
           color: "white",
         }}
         >
-          <TranslateText componentArray={["home","heroTitle"]} splitIndex={[3,4]}/>
+          <RenderTranslatedText componentArray={["home","heroTitle"]} splitIndex={[3,4]}/>
         </span>
         <span style={{
           background: "linear-gradient(270deg, #AAD9D1, #017373)",
@@ -41,14 +41,14 @@ const HeroText = () =>{
           marginLeft: "10px"
         }}
         >
-          <TranslateText componentArray={["home","heroTitle"]} splitIndex={[4,5]}/>
+          <RenderTranslatedText componentArray={["home","heroTitle"]} splitIndex={[4,5]}/>
         </span>
         <span style={{
           color: "#AAD9D1",
           marginLeft: "10px"
         }}
         >
-          <TranslateText componentArray={["home","heroTitle"]} splitIndex={[5]}/>
+          <RenderTranslatedText componentArray={["home","heroTitle"]} splitIndex={[5]}/>
         </span>
       </div>
       <div className="w-[650px]" style={{ lineHeight: "102%" }}>
@@ -58,21 +58,21 @@ const HeroText = () =>{
           WebkitTextFillColor: "transparent",
         }}
         >
-          <TranslateText componentArray={["home","heroSubText"]} splitIndex={[0,1]}/>
+          <RenderTranslatedText componentArray={["home","heroSubText"]} splitIndex={[0,1]}/>
         </span>
         <span style={{
           color: "#AAD9D1",
           marginLeft: "10px"
         }}
         >
-          <TranslateText componentArray={["home","heroSubText"]} splitIndex={[1,2]}/>
+          <RenderTranslatedText componentArray={["home","heroSubText"]} splitIndex={[1,2]}/>
         </span>
         <span style={{
           color: "#AAD9D1",
           marginLeft: "10px"
         }}
         >
-        <TranslateText componentArray={["home","heroSubText"]} splitIndex={[2,3]}/>
+        <RenderTranslatedText componentArray={["home","heroSubText"]} splitIndex={[2,3]}/>
         </span>
       </div>
       <div className="w-[650px]" style={{ lineHeight: "102%" }}>
@@ -82,7 +82,7 @@ const HeroText = () =>{
           WebkitTextFillColor: "transparent",
         }}
         >
-          <TranslateText componentArray={["home","heroSubText"]} splitIndex={[3,4]}/>
+          <RenderTranslatedText componentArray={["home","heroSubText"]} splitIndex={[3,4]}/>
         </span>
         <span style={{
           background: "linear-gradient(270deg, #AAD9D1, #017373)",
@@ -92,11 +92,11 @@ const HeroText = () =>{
         }}
         >
           {/* {heroSubText.slice(heroSubText.length-1)} */}
-          <TranslateText componentArray={["home","heroSubText"]} splitIndex={[4]}/>
+          <RenderTranslatedText componentArray={["home","heroSubText"]} splitIndex={[4]}/>
         </span>
       </div>
       <div className="font-normal text-[16px] text-titleDesc w-[480px] mt-4">
-        <TranslateText componentArray={["home","heroPunch"]}/>
+        <RenderTranslatedText componentArray={["home","heroPunch"]}/>
       </div>
     </>
     )
