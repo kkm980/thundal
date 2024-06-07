@@ -3,13 +3,15 @@ import TitleContainer from "./TitleContainer"
 import FeatureCardContainer from "./FeatureCard";
 
 const FeaturesContainer = () => {
-    return (
-        <>
-          <CenterBox children={<TitleContainer/>} />
-          <FeatureCardContainer />
-        </>
-        
-    )
+  return (
+    <>
+      <CenterBox>
+        <TitleContainer />
+      </CenterBox>
+      <FeatureCardContainer />
+    </>
+
+  )
 }
 
 export default FeaturesContainer;
