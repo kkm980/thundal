@@ -23,7 +23,7 @@ interface ButtonProps {
  * 
  * @returns {JSX.Element} The RoundedBtn component.
  */
-const RoundedBtn: React.FC<ButtonProps> = ({ text, onClick, className = '', style = {}, children }) => {
+const RoundedBtn: React.FC<ButtonProps> = ({ text, onClick, className = '', style = {}, children }): JSX.Element => {
   return (
     <div
       className={`w-auto h-[60px] px-[24px] ${xCenter} text-punchText text-black cursor-pointer rounded-[50px] ${className}`}

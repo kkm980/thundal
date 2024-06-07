@@ -70,7 +70,8 @@ const config: Config = {
       },
       fontSize: {
         'mainTitle': "47px",
-        'secTitle': '24px',
+        'secTitle': "47px",
+        'secContent': '24px',
         'punchText': '16px',
       },
       fontWeight: {

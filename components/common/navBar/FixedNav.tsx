@@ -43,6 +43,7 @@ const FixedNav: React.FC = () => {
 
   return (
     showNavBar && (
+      
       <div className={`w-[50%] h-[60px] pl-2 pr-[0.5px] bg-black shadow-[#034441] shadow-lg rounded-[60px] fixed top-[10px] z-[999] ${xBetween}`}>
         {/* <Logo className="ml-2" /> */}
         <div className='ml-4'>

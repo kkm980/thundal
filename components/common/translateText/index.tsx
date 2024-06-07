@@ -13,7 +13,7 @@ import translate from '@/utils/translate';
  * @param {number[]} splitIndex - Array of indices at which to split the translated text.
  * @returns {JSX.Element | null} The translated text components or null if translation is not available.
  */
-const RenderTranslatedText: React.FC<{ componentArray?: string[]; splitIndex?: number[]; }> = ({ componentArray, splitIndex }) => {
+const RenderTranslatedText: React.FC<{ componentArray?: string[]; splitIndex?: number[]; renderComponent?:string }> = ({ componentArray, splitIndex, renderComponent }) => {
     const selectedLanguageStore = useSelector((state: any) => state?.applicationSlice?.selectedLanguageStore);
     let text = componentArray ? translate(Object.keys(selectedLanguageStore)[0] || "en", ...componentArray) : undefined;
 
