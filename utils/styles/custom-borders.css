@@ -13,7 +13,7 @@
     top: 0;
     left: 50%;
     width: 50%;
-    height: 1px;
+    height: 2px;
   }
   
   .half-border::after {

@@ -31,7 +31,7 @@ const FeatureCardContainer = () => {
     ));
 
     return (
-      <div className="w-[100%] max-w-[1000px] h-auto">
+      <div className="w-[100%] max-w-[1000px] h-auto mt-[60px]">
         <Carousel
             responsive={airdropCardSetting}
             swipeable={true}
@@ -41,7 +41,7 @@ const FeatureCardContainer = () => {
   infinite={true}
   containerClass="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile"]}
-  dotListClass="custom-dot-list-style"
+  dotListClass="custom-dot-list-style hidden"
   itemClass=""
         >
             {airdropCardData}
