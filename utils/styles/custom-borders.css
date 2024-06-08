@@ -26,7 +26,7 @@
   left: 0;
   height: 360px;
   width: 270px;
-  background: linear-gradient(60deg, #013c4b, #024955, #03646e, #538392, #135D66, #003C43, #77B0AA, #2C7865, #007F73, #344955, #50C4ED, #436850, #83C0C1, #638889, #6DA4AA, #43766C);
+  background: linear-gradient(60deg, #11141a, #151515, #101a20, #161313, #010e0f, #0e1622, #12051a, #070F2B, #1d1a18, #18171a, #130822, #05141b, #1F1717, #04172b, #02202c, #001524);
   border-radius: 12px;
   z-index: -1;
   animation: animatedgradient 8s ease alternate infinite;
