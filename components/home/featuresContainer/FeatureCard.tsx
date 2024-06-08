@@ -2,11 +2,9 @@
 
 import { RenderTranslatedText } from "@/components/common/translateText";
 import airdropCardSetting from "@/constants/airdropCardSetting";
-import { xBetween } from "@/utils/styles";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 const FeatureCard = ({ index }: { index: number }) => {
     return (

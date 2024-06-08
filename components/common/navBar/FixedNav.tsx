@@ -5,6 +5,7 @@ import LinkBox from './LinkBox';
 import RoundedBtn from '../button/RoundedBtn';
 import ResponsiveLogo from './ResponsiveLogo';
 import { xBetween } from '@/utils/styles';
+import LanguageSelector from '../languageSelector';
 
 /**
  * FixedNav Component
@@ -51,6 +52,10 @@ const FixedNav: React.FC = () => {
         </div>
         
         <LinkBox className="ml-16 w-[200px]" />
+        <div className='absolute right-[120px]'>
+          <LanguageSelector showAutoScroll={false}/>
+        </div>
+        
         <RoundedBtn text={"Get Started"} className="" />
       </div>
     )

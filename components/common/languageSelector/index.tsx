@@ -41,7 +41,11 @@ type RootState = {
  * 
  * @returns {JSX.Element} The LanguageSelector component.
  */
-const LanguageSelector: React.FC = (): JSX.Element => {
+interface LanguageSelectorProps {
+    showAutoScroll?: boolean;
+  }
+  
+  const LanguageSelector: React.FC<LanguageSelectorProps> = ({ showAutoScroll = true }: LanguageSelectorProps): JSX.Element => {
     // Use RootState to type the state parameter in useSelector
     const { selectedLanguageStore } = useSelector((state: RootState) => state.applicationSlice);
     const [dropDownOpen, setDropDownOpen] = useState(false);
@@ -79,13 +83,14 @@ const LanguageSelector: React.FC = (): JSX.Element => {
         <div
             ref={containerRef}
             className="group/top relative mr-8 rounded-[25px] z-[99] cursor-pointer"
+            onMouseEnter={() => setDropDownOpen(true)}
             onClick={() => setDropDownOpen(prev => !prev)}
         >
             <div className={`${xBetween}`}>
-                <div className="absolute top-[15px] ml-[20px] text-punchText text-sky hidden group-hover/top:block">
+                {showAutoScroll && <div className="absolute top-[15px] ml-[20px] text-punchText text-sky hidden group-hover/top:block">
                     {(Object.values(selectedLanguageStore))[0].title}
-                </div>
-                <AutoScroller scrollSpeed={100} className="hidden group-hover/top:block" />
+                </div>}
+                {showAutoScroll && <AutoScroller scrollSpeed={100} className="hidden group-hover/top:block" />}
                 <Image
                     src={(Object.values(selectedLanguageStore))[0].flagIcon}
                     alt="flag"
