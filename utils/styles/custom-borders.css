@@ -1,43 +1,53 @@
+/* .half-border {
+  position: relative;
+}
+
+.half-border::before,
+.half-border::after {
+  content: '';
+  position: absolute;
+  background-color: #008B8B;
+  height: 2px;
+  width: 50%;
+  animation: moveBorder 2s infinite;
+} */
+
 .half-border {
-    position: relative;
-  }
-  
-  .half-border::before,
-  .half-border::after {
-    content: '';
-    position: absolute;
-    background-color: #008B8B;
-  }
-  
-  .half-border::before {
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 2px;
-  }
-  
-  .half-border::after {
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 1px;
-  }
-  
-  .half-border .half-right,
-  .half-border .half-left {
-    position: absolute;
-    background-color: #008B8B;
-    width: 1px;
-    height: 50%;
-  }
-  
-  .half-border .half-right {
-    top: 50%;
-    right: 0;
-  }
-  
-  .half-border .half-left {
-    bottom: 0;
-    left: 0;
-  }
-  
+  /* --borderWidth: 3px; */
+  background: transparent;
+  position: relative;
+  border-radius: 12px;
+  cursor: none;
+}
+.half-border:hover:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 360px;
+  width: 270px;
+  background: linear-gradient(60deg, #013c4b, #024955, #03646e, #538392, #135D66, #003C43, #77B0AA, #2C7865, #007F73, #344955, #50C4ED, #436850, #83C0C1, #638889, #6DA4AA, #43766C);
+  border-radius: 12px;
+  z-index: -1;
+  animation: animatedgradient 8s ease alternate infinite;
+  background-size: 800% 800%;
+}
+
+.half-border:hover {
+  transition: all 1.2s ease;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+

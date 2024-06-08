@@ -6,12 +6,17 @@ import { xBetween } from "@/utils/styles";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 const FeatureCard = ({ index }: { index: number }) => {
     return (
+
         <div className="w-[270px] min-h-[350px] p-[16px] pt-[16px] rounded-[12px] half-border">
             <div className="mb-[16px]">
-                <Image src={`/home/featureSection/${index}.svg`} width={32} height={32} alt="icon" />
+            
+        <Image src={`/home/featureSection/${index}.svg`} width={32} height={32} alt="icon" />
+
+                
             </div>
 
             <div className="mb-[16px] text-[20px] text-sky">
