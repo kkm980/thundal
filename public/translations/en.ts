@@ -36,7 +36,33 @@ export const en: {[page: string]: any} = {
                 title: "Favorite to Favorites",
                 subText: "Now there is more to connect on GlanceVerse. From protagonist to character in grey, from man behind the camera to the person behind everything! Discover more and add them to your favorites"
             }
-        ]
+        ],
+        faq: {
+            title: "Frequently Asked Questions",
+            subTitle: "We've compiled a list of the most frequently asked questions about GlanceVerse to help you get the information you need. If you have any other questions, feel free to reach out to our support team.",
+            faqItems:[
+                {
+                    question: "How do I get started with GlanceVerse?",
+                    answer: "Getting started with GlanceVerse is easy! Simply visit our website, sign up for a free trial, and start exploring the features. Our intuitive interface and comprehensive onboarding materials will guide you through the process."
+                },
+                {
+                    question: "How do I get started with GlanceVerse?",
+                    answer: "Getting started with GlanceVerse is easy! Simply visit our website, sign up for a free trial, and start exploring the features. Our intuitive interface and comprehensive onboarding materials will guide you through the process."
+                },
+                {
+                    question: "How do I get started with GlanceVerse?",
+                    answer: "Getting started with GlanceVerse is easy! Simply visit our website, sign up for a free trial, and start exploring the features. Our intuitive interface and comprehensive onboarding materials will guide you through the process."
+                },
+                {
+                    question: "How do I get started with GlanceVerse?",
+                    answer: "Getting started with GlanceVerse is easy! Simply visit our website, sign up for a free trial, and start exploring the features. Our intuitive interface and comprehensive onboarding materials will guide you through the process."
+                },
+                {
+                    question: "How do I get started with GlanceVerse?",
+                    answer: "Getting started with GlanceVerse is easy! Simply visit our website, sign up for a free trial, and start exploring the features. Our intuitive interface and comprehensive onboarding materials will guide you through the process."
+                }
+            ]
+        }
     },
     tutorial: {
         tutorialTitle: "Connect Directly with Your Favorite Celeb:",

@@ -10,6 +10,7 @@ import { col, responsiveBoxClass, xBetween, xStart } from "@/utils/styles";
 import TestimonialContainer from "@/components/home/testimonialContainer";
 import FeaturesContainer from '@/components/home/featuresContainer';
 import PlayerContainer from '@/components/home/playerContainer';
+import FAQContainer from '@/components/home/faqComponent';
 /**
  * React component for the homepage.
  * Sets up the main structure of the homepage with various sub-components.
@@ -26,11 +27,12 @@ export default function Home() {
   const memoizedThirdTestimonialContainer = useMemo(() => <TestimonialContainer index={0} />, []);
   const memoizedFeaturesContainer = useMemo(() => <FeaturesContainer />, []);
   const memoizedPlayerContainer = useMemo(() => <PlayerContainer />, []);
+  const memoisedFAQContainer = useMemo(() => <FAQContainer />, []);
   return (
-    <div className={`${dmSans.className} w-full h-[auto] overflow-x-hidden bg-homeBg relative`}>
+    <div className={`${dmSans.className} w-full h-[800vh] overflow-x-hidden bg-homeBg relative`}>
       <div className={`bg-transparent relative ${xStart} ${col} w-full px-[30px]`}>
         {memoizedFixedNav}
-        <RenderBox className={`relative bg-primary ${responsiveBoxClass} h-auto mt-[30px] ${xStart} ${col} h-[100vh]`}>
+        <RenderBox className={`relative bg-primary ${responsiveBoxClass} mt-[30px] ${xStart} ${col}`}>
           {memoizedStaticNav}
           <div className={`w-[80%] max-w-[1280px] ${xBetween} mt-4`}>
             {memoizedHeroContainer}
@@ -38,10 +40,11 @@ export default function Home() {
           </div>
           {memoizedMarqueContainer}
           {memoizedFirstTestimonialContainer}
-          {memoizedFeaturesContainer}
-          {memoizedSecondTestimonialContainer}
           {memoizedPlayerContainer}
+          {memoizedSecondTestimonialContainer}
+          {memoizedFeaturesContainer}
           {memoizedThirdTestimonialContainer}
+          {memoisedFAQContainer}
         </RenderBox>
       </div>
     </div>
