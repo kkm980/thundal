@@ -28,14 +28,27 @@ export const RenderBox: React.FC<RenderBoxProps> = ({ children, className }): JS
   return (
     <div id="outer" className={`relative bg-black ${className}`}>
       {(outerHeight !== null) && (outerHeight > 900) && (
-        <div className="absolute w-[455px] h-[455px] left-[0px] top-[550px] blur-[280px]" style={{ backgroundImage: `url("/images/common/bg/layer1.svg")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+        <div className="absolute w-[455px] h-[455px] left-[0px] top-[550px] blur-[240px]" style={{ backgroundImage: `url("/images/common/bg/layer1.svg")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+        </div>
+      )}
+
+      {(outerHeight !== null) && (outerHeight > 900) && (
+        <div className="absolute w-[455px] h-[455px] right-[0px] top-[1200px] blur-[240px]" style={{ backgroundImage: `url("/images/common/bg/layer1.svg")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+        </div>
+      )}
+
+      {(outerHeight !== null) && (outerHeight > 900) && (
+        <div className="absolute w-[455px] h-[455px] left-[0px] top-[1900px] blur-[240px]" style={{ backgroundImage: `url("/images/common/bg/layer1.svg")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
         </div>
       )}
 
 {(outerHeight !== null) && (outerHeight > 900) && (
-        <div className="absolute w-[455px] h-[455px] right-[0px] top-[1200px] blur-[230px]" style={{ backgroundImage: `url("/images/common/bg/layer1.svg")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+        <div className="absolute w-[455px] h-[455px] right-[0px] top-[2800px] blur-[240px]" style={{ backgroundImage: `url("/images/common/bg/layer1.svg")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
         </div>
       )}
+
+
+
       {children}
     </div>
   );

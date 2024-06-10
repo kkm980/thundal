@@ -11,6 +11,7 @@ import TestimonialContainer from "@/components/home/testimonialContainer";
 import FeaturesContainer from '@/components/home/featuresContainer';
 import PlayerContainer from '@/components/home/playerContainer';
 import FAQContainer from '@/components/home/faqComponent';
+import { AnimatedPinDemo } from '@/components/home/3dPin';
 /**
  * React component for the homepage.
  * Sets up the main structure of the homepage with various sub-components.
@@ -28,6 +29,8 @@ export default function Home() {
   const memoizedFeaturesContainer = useMemo(() => <FeaturesContainer />, []);
   const memoizedPlayerContainer = useMemo(() => <PlayerContainer />, []);
   const memoisedFAQContainer = useMemo(() => <FAQContainer />, []);
+  const memoisedAnimatedPin = useMemo(() => <AnimatedPinDemo />, []);
+
   return (
     <div className={`${dmSans.className} w-full h-[800vh] overflow-x-hidden bg-homeBg relative`}>
       <div className={`bg-transparent relative ${xStart} ${col} w-full px-[30px]`}>
@@ -45,6 +48,7 @@ export default function Home() {
           {memoizedFeaturesContainer}
           {memoizedThirdTestimonialContainer}
           {memoisedFAQContainer}
+          {memoisedAnimatedPin}
         </RenderBox>
       </div>
     </div>
