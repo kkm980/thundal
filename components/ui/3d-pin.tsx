@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import { xCenter } from "@/utils/styles";
 
 export const PinContainer = ({
     children,
@@ -47,7 +48,7 @@ export const PinContainer = ({
                     style={{
                         transform: transform,
                     }}
-                    className="absolute left-1/2 p-4 top-1/2 flex justify-between items-start rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black border border-riverSide shadow-2xl shadow-darkCyan group-hover/pin:border-darkCyan group-hover/pin:shadow-none transition duration-[1500ms] overflow-hidden h-[400px] w-[800px]"
+                    className={`absolute left-1/2 p-4 top-1/2 flex justify-between items-start rounded-[8px] shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black border border-riverSide shadow-2xl shadow-darkCyan group-hover/pin:border-darkCyan group-hover/pin:shadow-none transition duration-[1500ms] overflow-hidden h-[400px] w-[800px]`}
                 >
                     <div className={cn("relative z-50 w-[100%]", className)}>{children}</div>
                 </div>
@@ -65,7 +66,7 @@ export const PinPerspective = ({
     onClick: () => void;
 }) => {
     return (
-        <motion.div className="w-auto h-[360px] flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+        <motion.div className={`w-auto h-[360px] ${xCenter} opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500`}>
             <div className=" w-full h-full -mt-7 flex-none inset-0">
                 <div className="absolute top-0 inset-x-0 flex justify-center">
                     <span className="relative z-20 text-white text-xs font-bold inline-block py-0.5" onClick={onClick}>

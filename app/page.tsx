@@ -32,7 +32,7 @@ export default function Home() {
   const memoisedAnimatedPin = useMemo(() => <AnimatedPinDemo />, []);
 
   return (
-    <div className={`${dmSans.className} w-full h-[800vh] overflow-x-hidden bg-homeBg relative`}>
+    <div className={`${dmSans.className} w-full overflow-x-hidden bg-homeBg relative`}>
       <div className={`bg-transparent relative ${xStart} ${col} w-full px-[30px]`}>
         {memoizedFixedNav}
         <RenderBox className={`relative bg-primary ${responsiveBoxClass} mt-[30px] ${xStart} ${col}`}>

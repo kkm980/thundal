@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { PinContainer } from "@/components/ui/3d-pin";
+import { col, xBetween, xCenter } from "@/utils/styles";
 
 export function AnimatedPinDemo() {
     const pinCards = [
@@ -31,16 +32,16 @@ export function AnimatedPinDemo() {
     ]
     const [currInd, setCurrInd] = useState(0);
     return (
-        <div className="relative h-[40rem] w-auto flex items-center justify-center">
+        <div className={`mt-[20px] h-[440px] relative w-auto ${xCenter}`}>
             <PinContainer
                 title={pinCards[currInd].nextText}
                 onClick={() => {
                     setCurrInd((prev) => (prev + 1) % pinCards.length);
                 }}
-                className="flex justify-between items-center"
+                className={`${xBetween}`}
             >
-                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
-                    <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                <div className={`basis-full ${col} p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]`}>
+                    <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
                         {pinCards[currInd].title}
                     </h3>
                     <div className="text-base !m-0 !p-0 font-normal">
