@@ -24,12 +24,12 @@ const FAQCard = ({ index, selectedFaqIndex, clickFun }: { index: number, selecte
         >
             <div className="w-[100%] max-w-[682px]">
                 <div className={`text-[18px] font-semibold ${selectedFaqIndex === index ? "text-black" : "text-white"}`}>
-                    What is GlanceVerse?
+                    What is Thundal?
                 </div>
                 <div 
                     className={`text-[16px] mt-[6px] text-[#737373] overflow-hidden ${selectedFaqIndex === index ? "block" : "hidden"}`}
                 >
-                    Getting started with GlanceVerse is easy! Simply visit our website, sign up for a free trial, and start exploring the features. Our intuitive interface and comprehensive onboarding materials will guide you through the process.
+                    Getting started with Thundal is easy! Simply visit our website, sign up for a free trial, and start exploring the features. Our intuitive interface and comprehensive onboarding materials will guide you through the process.
                 </div>
             </div>
             <div className="h-[32px] w-[32px] rounded-[8px] border border-darkCyan">

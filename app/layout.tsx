@@ -9,13 +9,13 @@ const ReduxProvider = dynamic(() => import("@/store/redux-provider"), {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kvouer | Connect Directly with Your Favorite Celebs!",
+  title: "Thundal | Connect Directly with Your Favorite Celebs!",
   description: "Own your own Fan Hub!",
   icons: {
     icon: "/home/marque/mar1.svg",
   },
   openGraph: {
-    title: "Kvouer | Connect Directly with Your Favorite Celebs!",
+    title: "Thundal | Connect Directly with Your Favorite Celebs!",
     description: "Own your own Fan Hub!",
     type: "website",
     url: `${process.env.NEXT_PUBLIC_REFERRAL_SHARE_URL}/en/airdrop`,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kvouer | Connect Directly with Your Favorite Celebs!",
+    title: "Thundal | Connect Directly with Your Favorite Celebs!",
     description: "Own your own Fan Hub!",
     images: [
       "/home/blinkIcons/aamir.jpg",

@@ -17,24 +17,24 @@ export const es: {[page: string]: any} = {
                 designation: "BestWallet Co."
             }
         ],
-        descriptionTitle: "Descubre la Alegría de GlanceVerse",
-        descriptionSubText: "GlanceVerse está lleno de un diseño alegre que hace que tu interacción con tu celebridad favorita sea emocionante, acogedora y duradera",
+        descriptionTitle: "Descubre la Alegría de Thundal",
+        descriptionSubText: "Thundal está lleno de un diseño alegre que hace que tu interacción con tu celebridad favorita sea emocionante, acogedora y duradera",
         descriptionCards: [
             {
                 title: "Grabación Memorable y Segura",
-                subText: "En GlanceVerse, recopila todos tus momentos de fan y asegúralos para siempre. Puedes descargar tus videos de interacción como tu momento más preciado y celebrado."
+                subText: "En Thundal, recopila todos tus momentos de fan y asegúralos para siempre. Puedes descargar tus videos de interacción como tu momento más preciado y celebrado."
             },
             {
                 title: "Colaboración en Tiempo Real",
-                subText: "Colabora sin problemas con tus compañeros de equipo o celebridades en tiempo real en GlanceVerse."
+                subText: "Colabora sin problemas con tus compañeros de equipo o celebridades en tiempo real en Thundal."
             },
             {
                 title: "Accesibilidad Multiplataforma",
-                subText: "Ya sea en tu escritorio, tableta o smartphone, GlanceVerse es accesible en todos los dispositivos. Conéctate sin problemas en cualquier lugar y no te pierdas de nada."
+                subText: "Ya sea en tu escritorio, tableta o smartphone, Thundal es accesible en todos los dispositivos. Conéctate sin problemas en cualquier lugar y no te pierdas de nada."
             },
             {
                 title: "Favorito a Favoritos",
-                subText: "Ahora hay más para conectar en GlanceVerse. Desde el protagonista hasta el personaje en gris, desde el hombre detrás de la cámara hasta la persona detrás de todo. ¡Descubre más y agrégales a tus favoritos!"
+                subText: "Ahora hay más para conectar en Thundal. Desde el protagonista hasta el personaje en gris, desde el hombre detrás de la cámara hasta la persona detrás de todo. ¡Descubre más y agrégales a tus favoritos!"
             }
         ]
     },
@@ -56,24 +56,24 @@ export const es: {[page: string]: any} = {
                 designation: "BestWallet Co."
             }
         ],
-        descriptionTitle: "Descubre la Alegría de GlanceVerse",
-        descriptionSubText: "GlanceVerse está lleno de un diseño alegre que hace que tu interacción con tu celebridad favorita sea emocionante, acogedora y duradera",
+        descriptionTitle: "Descubre la Alegría de Thundal",
+        descriptionSubText: "Thundal está lleno de un diseño alegre que hace que tu interacción con tu celebridad favorita sea emocionante, acogedora y duradera",
         descriptionCards: [
             {
                 title: "Grabación Memorable y Segura",
-                subText: "En GlanceVerse, recopila todos tus momentos de fan y asegúralos para siempre. Puedes descargar tus videos de interacción como tu momento más preciado y celebrado."
+                subText: "En Thundal, recopila todos tus momentos de fan y asegúralos para siempre. Puedes descargar tus videos de interacción como tu momento más preciado y celebrado."
             },
             {
                 title: "Colaboración en Tiempo Real",
-                subText: "Colabora sin problemas con tus compañeros de equipo o celebridades en tiempo real en GlanceVerse."
+                subText: "Colabora sin problemas con tus compañeros de equipo o celebridades en tiempo real en Thundal."
             },
             {
                 title: "Accesibilidad Multiplataforma",
-                subText: "Ya sea en tu escritorio, tableta o smartphone, GlanceVerse es accesible en todos los dispositivos. Conéctate sin problemas en cualquier lugar y no te pierdas de nada."
+                subText: "Ya sea en tu escritorio, tableta o smartphone, Thundal es accesible en todos los dispositivos. Conéctate sin problemas en cualquier lugar y no te pierdas de nada."
             },
             {
                 title: "Favorito a Favoritos",
-                subText: "Ahora hay más para conectar en GlanceVerse. Desde el protagonista hasta el personaje en gris, desde el hombre detrás de la cámara hasta la persona detrás de todo. ¡Descubre más y agrégales a tus favoritos!"
+                subText: "Ahora hay más para conectar en Thundal. Desde el protagonista hasta el personaje en gris, desde el hombre detrás de la cámara hasta la persona detrás de todo. ¡Descubre más y agrégales a tus favoritos!"
             }
         ],
         axioms: "abcd",
