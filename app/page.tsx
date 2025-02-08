@@ -12,6 +12,7 @@ import FeaturesContainer from '@/components/home/featuresContainer';
 import PlayerContainer from '@/components/home/playerContainer';
 import FAQContainer from '@/components/home/faqComponent';
 import { AnimatedPinDemo } from '@/components/home/3dPin';
+import ParallaxCard from '@/components/home/parallaxCard';
 /**
  * React component for the homepage.
  * Sets up the main structure of the homepage with various sub-components.
@@ -30,9 +31,11 @@ export default function Home() {
   const memoizedPlayerContainer = useMemo(() => <PlayerContainer />, []);
   const memoisedFAQContainer = useMemo(() => <FAQContainer />, []);
   const memoisedAnimatedPin = useMemo(() => <AnimatedPinDemo />, []);
+  const memoizedParallaxCard = useMemo(() => <ParallaxCard />, []);
 
   return (
-    <div className={`${dmSans.className} w-full overflow-x-hidden bg-homeBg relative`}>
+    <>
+    <div className={`${dmSans.className} w-full bg-homeBg relative`}>
       <div className={`bg-transparent relative ${xStart} ${col} w-full px-[30px]`}>
         {memoizedFixedNav}
         <RenderBox className={`relative bg-primary ${responsiveBoxClass} mt-[30px] ${xStart} ${col}`}>
@@ -48,9 +51,12 @@ export default function Home() {
           {memoizedFeaturesContainer}
           {memoizedThirdTestimonialContainer}
           {memoisedFAQContainer}
-          {memoisedAnimatedPin}
+          {/* {memoisedAnimatedPin} */}
+          {memoizedParallaxCard} 
         </RenderBox>
       </div>
     </div>
+     
+     </>
   );
 }
